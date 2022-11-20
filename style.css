@@ -1,11 +1,11 @@
 :root {
-  --light-black: #818286;
-  --black: #2c2e38;
+  --light-black: #23283b;
+  --black: #00020a;
   --white: #ffffff;
-  --white-smoke: #f9f9f9ee;
-  --grey: #81818a22;
-  --sky-blue: #67e6d5;
-  --tomato: #d46d74;
+  --white-smoke: #d7d3d3ee;
+  --grey: #7e7e9622;
+  --sky-blue: #1705a1;
+  --tomato: #7e0689;
 }
 
 body.dark {
@@ -76,14 +76,14 @@ footer {
 }
 
 #calculator .result .history #history-value {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   color: var(--light-black);
   padding-bottom: 5px;
 }
 
 #calculator .result .output #output-value {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
   color: var(--black);
   padding-bottom: 10px;
@@ -102,13 +102,13 @@ footer {
 #calculator .keyboard button {
   border: none;
   outline: none;
-  width: 42px;
+  width: 62px;
   height: 42px;
   line-height: 42px;
   border-radius: 50%;
   background: var(--grey);
   font-weight: bold;
-  font-size: 21px;
+  font-size: 36px;
   color: var(--black);
   cursor: pointer;
   transition: transform 0.3s ease;
