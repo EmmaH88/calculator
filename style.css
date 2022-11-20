@@ -1,11 +1,11 @@
 :root {
-  --light-black: #818286;
+  --pink: #f96ef9;
   --black: #2c2e38;
-  --white: #ffffff;
-  --white-smoke: #f9f9f9ee;
-  --grey: #81818a22;
+  --light-pink: #f758c4;
+  --white-smoke: #fdfbfcee;
+  --grey: #0b0bec22;
   --sky-blue: violet;
-  --tomato: blueviolet;
+  --tomato: rgb(150, 6, 68);
 }
 
 body.dark {
@@ -14,6 +14,13 @@ body.dark {
   --white: #383d4b;
   --white-smoke: #2b2f3a;
   --grey: #4d515c;
+}
+
+h1 {
+  color: var(--light-pink);
+  text-decoration: underline;
+  text-align: center;
+  margin: 10px;
 }
 
 * {
@@ -35,7 +42,7 @@ body {
   width: 300px;
   height: 500px;
   margin: 60px auto;
-  background: var(--white);
+  background: var(--light-pink);
   border-radius: 15px;
 }
 
@@ -43,7 +50,7 @@ body {
   position: absolute;
   top: 25px;
   left: calc(50% - 30px);
-  background: var(--white-smoke);
+  background: var(--pink);
   padding: 7px 10px;
   text-align: center;
   border-radius: 50px;
@@ -86,7 +93,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 25px;
   padding: 14px 15px;
-  background: var(--white-smoke);
+  background: var(--pink);
   border-radius: 15px;
 }
 
