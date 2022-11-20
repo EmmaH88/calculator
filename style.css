@@ -4,8 +4,16 @@
   --white: #ffffff;
   --white-smoke: #f9f9f9ee;
   --grey: #81818a22;
-  --sky-blue: #67e6d5;
-  --tomato: #d46d74;
+  --sky-blue: violet;
+  --tomato: blueviolet;
+}
+
+body.dark {
+  --light-black: #969798ba;
+  --black: #c2c1c1;
+  --white: #383d4b;
+  --white-smoke: #2b2f3a;
+  --grey: #4d515c;
 }
 
 * {
@@ -99,6 +107,11 @@ body {
 
 #calculator .keyboard button:active {
   transform: scale(0.8);
+}
+
+.keyboard .empty {
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .keyboard .number {
