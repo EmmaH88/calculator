@@ -1,11 +1,11 @@
 :root {
-  --pink: #f96ef9;
+  --light-black: #818286;
   --black: #2c2e38;
-  --light-pink: #f758c4;
-  --white-smoke: #fdfbfcee;
-  --grey: #0b0bec22;
-  --sky-blue: violet;
-  --tomato: rgb(150, 6, 68);
+  --white: #ffffff;
+  --white-smoke: #f9f9f9ee;
+  --grey: #81818a22;
+  --sky-blue: #67e6d5;
+  --tomato: #d46d74;
 }
 
 body.dark {
@@ -14,13 +14,6 @@ body.dark {
   --white: #383d4b;
   --white-smoke: #2b2f3a;
   --grey: #4d515c;
-}
-
-h1 {
-  color: var(--light-pink);
-  text-decoration: underline;
-  text-align: center;
-  margin: 10px;
 }
 
 * {
@@ -37,20 +30,29 @@ body {
   overflow: hidden;
 }
 
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+footer {
+  margin: 15px 30px;
+}
+
 #calculator {
   position: relative;
-  width: 300px;
-  height: 500px;
-  margin: 60px auto;
-  background: var(--light-pink);
-  border-radius: 15px;
+  width: 350px;
+  height: 450px;
+  margin: 70px auto;
+  background: var(--white);
+  border-radius: 20px;
 }
 
 #calculator .theme-icons {
   position: absolute;
   top: 25px;
   left: calc(50% - 30px);
-  background: var(--pink);
+  background: var(--white-smoke);
   padding: 7px 10px;
   text-align: center;
   border-radius: 50px;
@@ -65,7 +67,7 @@ body {
 }
 
 #calculator .result {
-  height: 150px;
+  height: 180px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -93,7 +95,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 25px;
   padding: 14px 15px;
-  background: var(--pink);
+  background: var(--white-smoke);
   border-radius: 15px;
 }
 
@@ -114,11 +116,6 @@ body {
 
 #calculator .keyboard button:active {
   transform: scale(0.8);
-}
-
-.keyboard .empty {
-  pointer-events: none;
-  visibility: hidden;
 }
 
 .keyboard .number {
